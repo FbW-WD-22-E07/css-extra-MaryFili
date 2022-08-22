@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+
+:root {
+    --nav-text-height:55px;
+    --purple-nav-top: hsl(276, 64%, 35%);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: calc(12px + 0.5vw);
+    
+}
+
+nav {
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--purple-nav-top);
+    gap: 40px;
+    width: 100vw;
+
+}
+nav a {
+    text-decoration: none;
+    border-radius: 20px;
+    color: hsl(276, 64%, 95%);
+    height: var(--nav-text-height);
+    line-height: var(--nav-text-height);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+nav a:hover
+{
+    background-color:hsl(276, 64%, 45%);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 70px;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1, .test-section {
+    margin-bottom: 50px;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h2 {
+    margin-bottom: 25px;
+
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+
+}
+/* hover with the same color as the nav background-test with var */
+a:hover {
+    color: var(--purple-nav-top);
+}
